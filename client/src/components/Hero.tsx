@@ -1,6 +1,6 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
-import logo from '../assets/logo.svg'
+// import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import hero from '../assets/hero.jpg'
+import SongSearchBar from './SongSearchBar'
 
 const Hero = () => {
   return (
@@ -43,12 +43,12 @@ const Hero = () => {
       </div>
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
-          <img
+          {/* <img
             alt="logo"
             src={logo}
             className="h-11"
-          />
-          <div className="mt-24 sm:mt-32 lg:mt-16">
+          /> */}
+          {/* <div className="mt-24 sm:mt-32 lg:mt-16">
             <a href="#" className="inline-flex space-x-6">
               <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm/6 font-semibold text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
                 What's new
@@ -58,24 +58,28 @@ const Hero = () => {
                 <ChevronRightIcon aria-hidden="true" className="size-5 text-gray-500" />
               </span>
             </a>
-          </div>
-          <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+          </div> */}
+          <h1 className="mt-10 text-pretty text-5xl font-medium tracking-tight text-white sm:text-7xl">
             Decibel
           </h1>
-          <p className="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
+          <p className="mt-8 ml-1 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
            Resonates with you
           </p>
+
           <div className="mt-10 flex items-center gap-x-6">
-            <a
+            <SongSearchBar />
+            {/* <a
               href="#"
               className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
-              Get started
+              Search for your favourite tracks
             </a>
             <a href="#" className="text-sm/6 font-semibold text-white">
               Learn more <span aria-hidden="true">→</span>
-            </a>
+            </a> */}
+            
           </div>
+
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
@@ -84,7 +88,7 @@ const Hero = () => {
               src={hero}
               width={2432}
               height={1442}
-              className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
+              className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 opacity-50"
             />
           </div>
         </div>

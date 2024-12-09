@@ -20,13 +20,13 @@ A single page app of a music website using React + Vite + Tailwind CSS, that cal
 
 ```zsh
 
-npm create vite@latest decibel
+npm create vite@latest decibel-spa
 
 select a framework: > React
 
 select a variant: > Typecript
 
-cd decibel
+cd decibel-spa
 
 npm install
 
